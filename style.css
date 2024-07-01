@@ -1,0 +1,222 @@
+body {
+    background-image: url('/'); /* Specify the path to your background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    color: #0c0c0c; /* Changed text color to a dark shade for better contrast */
+    font-family: Arial, sans-serif; /* Added font family for better readability */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+}
+
+
+
+.footer-container {
+    margin: 20px auto 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #000000;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the navigation links */
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Styles for main body section */
+
+  main {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 1rem;
+    background-color: rgba(242, 242, 242, 0.5); /* Light grey background with 50% opacity */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main h1,
+main h2 {
+    margin-top: 0;
+    color: #333; /* Dark grey text color */
+}
+
+main h1 {
+    font-size: 2.5rem;
+}
+
+main h2 {
+    font-size: 2rem;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 50%;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main .gallery-item {
+    width: 33.33%;
+    float: left;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+main .gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+main .gallery-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Adjusting the container */
+.gallery-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of gallery items */
+}
+
+/* Adjusting the wrapper */
+.gallery-wrapper {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Horizontal layout */
+}
+
+/* Adjusting individual gallery items */
+.gallery-item {
+    flex: 0 0 auto; /* Prevent gallery items from growing or shrinking */
+    margin-right: 10px; /* Adjust spacing between items */
+}
+
+/* Ensuring images don't stretch */
+.gallery-item img {
+    max-width: 100%; /* Ensure images don't stretch beyond their original size */
+}
+
+
+main form {
+    margin-top: 2rem;
+}
+
+main label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666; /* Darker grey text color */
+}
+
+main input,
+main textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #333; /* Dark grey text color */
+    background-color: #fff; /* White background */
+}
+
+main input:focus,
+main textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #333; /* Dark grey shadow on focus */
+}
+
+button[type="submit"] {
+    background-color: #000; /* Black button background */
+    color: #fff; /* White button text color */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #333; /* Darkened button background on hover */
+}
+/* Style for the social media profiles section */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjusting anchor tags to be perfect circles */
+.social-links a {
+    display: inline-flex; /* Ensuring anchor tags behave like flex items */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    width: 40px; /* Adjust the width and height to define the size of the circle */
+    height: 40px;
+    border-radius: 50%; /* Making it a perfect circle */
+    background-color: #333; /* Background color for the icons */
+    color: #fff; /* Color of the icons */
+    margin: 0 10px; /* Adjust spacing between icons */
+    text-decoration: none; /* Removing default underline */
+    font-size: 20px; /* Font size of the icons */
+}
+
+/* Hover effect */
+.social-links a:hover {
+    background-color: #007bff; /* Change background color on hover */
+}
+
+/* Adjusting the size of the icons */
+.fa {
+    font-size: 18px; /* Adjust the size of the font-awesome icons */
+    line-height: 40px; /* Centering the icon vertically */
+}

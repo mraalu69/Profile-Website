@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="/style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="demo"><a href="/login.html" target="_blank">Login</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>Larry Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi aliquam voluptate saepe suscipit
+                unde.</p>
+            <img src="/profile.jpg" alt="Profile picture">
+            <section id="gallery" class="gallery-container">
+                <h2>Photo Gallery</h2>
+                <div class="gallery-wrapper">
+                    <div class="gallery-item">
+                        <img src="/profile.jpg" alt="Gallery image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/profile.jpg" alt="Gallery image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/profile.jpg" alt="Gallery image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/profile.jpg" alt="Gallery image 4">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contactForm" action="/contact" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <h1 class="social-media">Social Media Profiles</h1>
+                <div class="social-links">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+
+            </section>
+            <!-- <div id="Test">
+                <button type="button" onclick="ChangeAll()">Test</button>
+            </div> -->
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <!-- Add copyright information -->
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <!-- Include your custom JavaScript file -->
+</body>
+
+</html>

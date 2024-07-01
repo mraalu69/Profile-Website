@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            transition: height 0.3s ease;
+            overflow: hidden;
+        }
+
+        form {
+            display: none;
+        }
+
+        form.active {
+            display: block;
+        }
+
+        form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4e4be6;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3863ee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <!-- Login Form -->
+        <form id="loginForm" class="active" action="#" method="post">
+            <h2>Login</h2>
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="username" required>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required>
+
+            <input type="submit" value="Login">
+            <p onclick="toggleForm()">Don't have an account? Register here</p>
+        </form>
+
+        <!-- Registration Form -->
+        <form id="registerForm" action="#" method="post">
+            <h2>Register</h2>
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" name="username" required>
+
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <input type="submit" value="Register">
+            <p onclick="toggleForm()">Already have an account? Login here</p>
+
+
+
+        </form>
+        <h3>Contine With social-links</h3>
+
+
+
+        <button type="button" onclick="continuewithGmail()"
+            style="background-image: url('google.png'); background-size: contain; background-repeat: no-repeat; width: 150px; height: 40px; padding-left: 40px; border: none; cursor: pointer;">Google</button>
+
+        <button type="button" onclick="continuewithFacebook()"
+            style="background-image: url('facebook.png'); background-size: contain; background-repeat: no-repeat; width: 150px; height: 40px; padding-left: 40px; border: none; cursor: pointer;">Facebook</button>
+
+
+    </div>
+
+    <script>
+        function toggleForm() {
+            var loginForm = document.getElementById('loginForm');
+            var registerForm = document.getElementById('registerForm');
+
+            if (loginForm.classList.contains('active')) {
+                loginForm.classList.remove('active');
+                registerForm.classList.add('active');
+            } else {
+                registerForm.classList.remove('active');
+                loginForm.classList.add('active');
+            }
+        }
+        function continuewithGmail() {
+            //major code comes here
+            alert("Continue with Gmail Clicked!");
+        }
+        function continuewithFacebook() {
+            //major code comes here
+            alert("Continue with Facebook Clicked!");
+        }
+    </script>
+</body>
+
+</html>
